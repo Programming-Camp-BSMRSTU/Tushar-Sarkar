@@ -93,10 +93,8 @@ int main()
 	ll res[n+1]={0};
 	res[0]=1;
 
-	forn(i,n)
-	{
-		forn(j,6)
-		{
+	forn(i,n){
+		forn(j,6){
 			if(i-j<0)break;
 			res[i]=(res[i]+res[i-j])%md;
 		}
